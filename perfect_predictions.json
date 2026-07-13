@@ -1,0 +1,922 @@
+[
+  {
+    "id": "meet_migration_001",
+    "tasks": [
+      "Patch Postgres connection pool configuration by Tuesday (Assignee: Aniket)",
+      "Attach load-test result to the release ticket after the configuration change (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Production request failures caused by dropped Postgres connection pooling"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_migration_002",
+    "tasks": [
+      "Patch Redis connection pool configuration by Wednesday (Assignee: Priya)",
+      "Attach load-test result to the release ticket after the configuration change (Assignee: Priya)"
+    ],
+    "risks": [
+      "Production request failures caused by dropped Redis connection pooling"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_migration_003",
+    "tasks": [
+      "Patch Kafka connection pool configuration by Thursday (Assignee: Luis)",
+      "Attach load-test result to the release ticket after the configuration change (Assignee: Luis)"
+    ],
+    "risks": [
+      "Production request failures caused by dropped Kafka connection pooling"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_migration_004",
+    "tasks": [
+      "Patch MongoDB connection pool configuration by Friday (Assignee: Chen)",
+      "Attach load-test result to the release ticket after the configuration change (Assignee: Chen)"
+    ],
+    "risks": [
+      "Production request failures caused by dropped MongoDB connection pooling"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_migration_005",
+    "tasks": [
+      "Patch Elasticsearch connection pool configuration by Monday (Assignee: Fatima)",
+      "Attach load-test result to the release ticket after the configuration change (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Production request failures caused by dropped Elasticsearch connection pooling"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_vendor_001",
+    "tasks": [
+      "Send revised contract to Maya by Tuesday (Assignee: Aniket)",
+      "Record Maya's signature-timeline response in procurement (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Vendor onboarding delay due to an unsigned contract"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_vendor_002",
+    "tasks": [
+      "Send revised contract to Omar by Wednesday (Assignee: Priya)",
+      "Record Omar's signature-timeline response in procurement (Assignee: Priya)"
+    ],
+    "risks": [
+      "Vendor onboarding delay due to an unsigned contract"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_vendor_003",
+    "tasks": [
+      "Send revised contract to Nina by Thursday (Assignee: Luis)",
+      "Record Nina's signature-timeline response in procurement (Assignee: Luis)"
+    ],
+    "risks": [
+      "Vendor onboarding delay due to an unsigned contract"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_vendor_004",
+    "tasks": [
+      "Send revised contract to Iris by Friday (Assignee: Chen)",
+      "Record Iris's signature-timeline response in procurement (Assignee: Chen)"
+    ],
+    "risks": [
+      "Vendor onboarding delay due to an unsigned contract"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_vendor_005",
+    "tasks": [
+      "Send revised contract to Ravi by Monday (Assignee: Fatima)",
+      "Record Ravi's signature-timeline response in procurement (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Vendor onboarding delay due to an unsigned contract"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_incident_001",
+    "tasks": [
+      "Extend Postgres log retention to thirty days by Tuesday (Assignee: Aniket)",
+      "Publish the incident timeline in the operations channel (Assignee: Aniket)",
+      "Link the incident timeline to the incident ticket (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Future incident root-cause analysis is impaired by short log retention"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_incident_002",
+    "tasks": [
+      "Extend Redis log retention to thirty days by Wednesday (Assignee: Priya)",
+      "Publish the incident timeline in the operations channel (Assignee: Priya)",
+      "Link the incident timeline to the incident ticket (Assignee: Priya)"
+    ],
+    "risks": [
+      "Future incident root-cause analysis is impaired by short log retention"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_incident_003",
+    "tasks": [
+      "Extend Kafka log retention to thirty days by Thursday (Assignee: Luis)",
+      "Publish the incident timeline in the operations channel (Assignee: Luis)",
+      "Link the incident timeline to the incident ticket (Assignee: Luis)"
+    ],
+    "risks": [
+      "Future incident root-cause analysis is impaired by short log retention"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_incident_004",
+    "tasks": [
+      "Extend MongoDB log retention to thirty days by Friday (Assignee: Chen)",
+      "Publish the incident timeline in the operations channel (Assignee: Chen)",
+      "Link the incident timeline to the incident ticket (Assignee: Chen)"
+    ],
+    "risks": [
+      "Future incident root-cause analysis is impaired by short log retention"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_incident_005",
+    "tasks": [
+      "Extend Elasticsearch log retention to thirty days by Monday (Assignee: Fatima)",
+      "Publish the incident timeline in the operations channel (Assignee: Fatima)",
+      "Link the incident timeline to the incident ticket (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Future incident root-cause analysis is impaired by short log retention"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_security_001",
+    "tasks": [
+      "Upgrade the Postgres client package in staging by Tuesday (Assignee: Aniket)",
+      "Post regression-test outcome to the security ticket (Assignee: Aniket)",
+      "Request Ravi's production-rollout approval after staging passes (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Known exploit exposure from an unpatched Postgres client vulnerability"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_security_002",
+    "tasks": [
+      "Upgrade the Redis client package in staging by Wednesday (Assignee: Priya)",
+      "Post regression-test outcome to the security ticket (Assignee: Priya)",
+      "Request Ravi's production-rollout approval after staging passes (Assignee: Priya)"
+    ],
+    "risks": [
+      "Known exploit exposure from an unpatched Redis client vulnerability"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_security_003",
+    "tasks": [
+      "Upgrade the Kafka client package in staging by Thursday (Assignee: Luis)",
+      "Post regression-test outcome to the security ticket (Assignee: Luis)",
+      "Request Ravi's production-rollout approval after staging passes (Assignee: Luis)"
+    ],
+    "risks": [
+      "Known exploit exposure from an unpatched Kafka client vulnerability"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_security_004",
+    "tasks": [
+      "Upgrade the MongoDB client package in staging by Friday (Assignee: Chen)",
+      "Post regression-test outcome to the security ticket (Assignee: Chen)",
+      "Request Ravi's production-rollout approval after staging passes (Assignee: Chen)"
+    ],
+    "risks": [
+      "Known exploit exposure from an unpatched MongoDB client vulnerability"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_security_005",
+    "tasks": [
+      "Upgrade the Elasticsearch client package in staging by Monday (Assignee: Fatima)",
+      "Post regression-test outcome to the security ticket (Assignee: Fatima)",
+      "Request Ravi's production-rollout approval after staging passes (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Known exploit exposure from an unpatched Elasticsearch client vulnerability"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_data_quality_001",
+    "tasks": [
+      "Add a deduplication rule to the Postgres pipeline by Tuesday (Assignee: Aniket)",
+      "Backfill the affected reporting period (Assignee: Aniket)",
+      "Validate corrected dashboard totals with Maya (Assignee: Aniket)",
+      "Mark the dashboard as provisional today (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Incorrect revenue decisions caused by duplicate-event dashboard totals"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_data_quality_002",
+    "tasks": [
+      "Add a deduplication rule to the Redis pipeline by Wednesday (Assignee: Priya)",
+      "Backfill the affected reporting period (Assignee: Priya)",
+      "Validate corrected dashboard totals with Omar (Assignee: Priya)",
+      "Mark the dashboard as provisional today (Assignee: Priya)"
+    ],
+    "risks": [
+      "Incorrect revenue decisions caused by duplicate-event dashboard totals"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_data_quality_003",
+    "tasks": [
+      "Add a deduplication rule to the Kafka pipeline by Thursday (Assignee: Luis)",
+      "Backfill the affected reporting period (Assignee: Luis)",
+      "Validate corrected dashboard totals with Nina (Assignee: Luis)",
+      "Mark the dashboard as provisional today (Assignee: Luis)"
+    ],
+    "risks": [
+      "Incorrect revenue decisions caused by duplicate-event dashboard totals"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_data_quality_004",
+    "tasks": [
+      "Add a deduplication rule to the MongoDB pipeline by Friday (Assignee: Chen)",
+      "Backfill the affected reporting period (Assignee: Chen)",
+      "Validate corrected dashboard totals with Iris (Assignee: Chen)",
+      "Mark the dashboard as provisional today (Assignee: Chen)"
+    ],
+    "risks": [
+      "Incorrect revenue decisions caused by duplicate-event dashboard totals"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_data_quality_005",
+    "tasks": [
+      "Add a deduplication rule to the Elasticsearch pipeline by Monday (Assignee: Fatima)",
+      "Backfill the affected reporting period (Assignee: Fatima)",
+      "Validate corrected dashboard totals with Ravi (Assignee: Fatima)",
+      "Mark the dashboard as provisional today (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Incorrect revenue decisions caused by duplicate-event dashboard totals"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_launch_001",
+    "tasks": [
+      "Draft the Postgres rollback procedure by Tuesday (Assignee: Aniket)",
+      "Schedule rollback walkthrough with Maya (Assignee: Aniket)",
+      "Update the launch checklist with the dry-run result (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Slow recovery from a failed release without a Postgres rollback procedure"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_launch_002",
+    "tasks": [
+      "Draft the Redis rollback procedure by Wednesday (Assignee: Priya)",
+      "Schedule rollback walkthrough with Omar (Assignee: Priya)",
+      "Update the launch checklist with the dry-run result (Assignee: Priya)"
+    ],
+    "risks": [
+      "Slow recovery from a failed release without a Redis rollback procedure"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_launch_003",
+    "tasks": [
+      "Draft the Kafka rollback procedure by Thursday (Assignee: Luis)",
+      "Schedule rollback walkthrough with Nina (Assignee: Luis)",
+      "Update the launch checklist with the dry-run result (Assignee: Luis)"
+    ],
+    "risks": [
+      "Slow recovery from a failed release without a Kafka rollback procedure"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_launch_004",
+    "tasks": [
+      "Draft the MongoDB rollback procedure by Friday (Assignee: Chen)",
+      "Schedule rollback walkthrough with Iris (Assignee: Chen)",
+      "Update the launch checklist with the dry-run result (Assignee: Chen)"
+    ],
+    "risks": [
+      "Slow recovery from a failed release without a MongoDB rollback procedure"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_launch_005",
+    "tasks": [
+      "Draft the Elasticsearch rollback procedure by Monday (Assignee: Fatima)",
+      "Schedule rollback walkthrough with Ravi (Assignee: Fatima)",
+      "Update the launch checklist with the dry-run result (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Slow recovery from a failed release without a Elasticsearch rollback procedure"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_hiring_001",
+    "tasks": [
+      "Send interview rubric to Maya for approval by Tuesday (Assignee: Aniket)",
+      "Coordinate interviewer availability after rubric approval (Assignee: Aniket)",
+      "Update the hiring tracker (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Postgres migration delay caused by the unfilled data-engineer role"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_hiring_002",
+    "tasks": [
+      "Send interview rubric to Omar for approval by Wednesday (Assignee: Priya)",
+      "Coordinate interviewer availability after rubric approval (Assignee: Priya)",
+      "Update the hiring tracker (Assignee: Priya)"
+    ],
+    "risks": [
+      "Redis migration delay caused by the unfilled data-engineer role"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_hiring_003",
+    "tasks": [
+      "Send interview rubric to Nina for approval by Thursday (Assignee: Luis)",
+      "Coordinate interviewer availability after rubric approval (Assignee: Luis)",
+      "Update the hiring tracker (Assignee: Luis)"
+    ],
+    "risks": [
+      "Kafka migration delay caused by the unfilled data-engineer role"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_hiring_004",
+    "tasks": [
+      "Send interview rubric to Iris for approval by Friday (Assignee: Chen)",
+      "Coordinate interviewer availability after rubric approval (Assignee: Chen)",
+      "Update the hiring tracker (Assignee: Chen)"
+    ],
+    "risks": [
+      "MongoDB migration delay caused by the unfilled data-engineer role"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_hiring_005",
+    "tasks": [
+      "Send interview rubric to Ravi for approval by Monday (Assignee: Fatima)",
+      "Coordinate interviewer availability after rubric approval (Assignee: Fatima)",
+      "Update the hiring tracker (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Elasticsearch migration delay caused by the unfilled data-engineer role"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_compliance_001",
+    "tasks": [
+      "Export Postgres access-review records by Tuesday (Assignee: Aniket)",
+      "Request export-completeness verification from Maya (Assignee: Aniket)",
+      "Upload final access-review evidence to the audit folder after verification (Assignee: Aniket)",
+      "Notify Fatima when the audit evidence is available (Assignee: Aniket)"
+    ],
+    "risks": [
+      "External audit finding caused by missing Postgres access-review records"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_compliance_002",
+    "tasks": [
+      "Export Redis access-review records by Wednesday (Assignee: Priya)",
+      "Request export-completeness verification from Omar (Assignee: Priya)",
+      "Upload final access-review evidence to the audit folder after verification (Assignee: Priya)",
+      "Notify Fatima when the audit evidence is available (Assignee: Priya)"
+    ],
+    "risks": [
+      "External audit finding caused by missing Redis access-review records"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_compliance_003",
+    "tasks": [
+      "Export Kafka access-review records by Thursday (Assignee: Luis)",
+      "Request export-completeness verification from Nina (Assignee: Luis)",
+      "Upload final access-review evidence to the audit folder after verification (Assignee: Luis)",
+      "Notify Fatima when the audit evidence is available (Assignee: Luis)"
+    ],
+    "risks": [
+      "External audit finding caused by missing Kafka access-review records"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_compliance_004",
+    "tasks": [
+      "Export MongoDB access-review records by Friday (Assignee: Chen)",
+      "Request export-completeness verification from Iris (Assignee: Chen)",
+      "Upload final access-review evidence to the audit folder after verification (Assignee: Chen)",
+      "Notify Fatima when the audit evidence is available (Assignee: Chen)"
+    ],
+    "risks": [
+      "External audit finding caused by missing MongoDB access-review records"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_compliance_005",
+    "tasks": [
+      "Export Elasticsearch access-review records by Monday (Assignee: Fatima)",
+      "Request export-completeness verification from Ravi (Assignee: Fatima)",
+      "Upload final access-review evidence to the audit folder after verification (Assignee: Fatima)",
+      "Notify Fatima when the audit evidence is available (Assignee: Fatima)"
+    ],
+    "risks": [
+      "External audit finding caused by missing Elasticsearch access-review records"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_performance_001",
+    "tasks": [
+      "Profile the Postgres query by Tuesday (Assignee: Aniket)",
+      "Propose an index at the performance review (Assignee: Aniket)",
+      "Document before-and-after query benchmarks (Assignee: Aniket)",
+      "Link the benchmark to the change request (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Checkout abandonment caused by peak-traffic API delays"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_performance_002",
+    "tasks": [
+      "Profile the Redis query by Wednesday (Assignee: Priya)",
+      "Propose an index at the performance review (Assignee: Priya)",
+      "Document before-and-after query benchmarks (Assignee: Priya)",
+      "Link the benchmark to the change request (Assignee: Priya)"
+    ],
+    "risks": [
+      "Checkout abandonment caused by peak-traffic API delays"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_performance_003",
+    "tasks": [
+      "Profile the Kafka query by Thursday (Assignee: Luis)",
+      "Propose an index at the performance review (Assignee: Luis)",
+      "Document before-and-after query benchmarks (Assignee: Luis)",
+      "Link the benchmark to the change request (Assignee: Luis)"
+    ],
+    "risks": [
+      "Checkout abandonment caused by peak-traffic API delays"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_performance_004",
+    "tasks": [
+      "Profile the MongoDB query by Friday (Assignee: Chen)",
+      "Propose an index at the performance review (Assignee: Chen)",
+      "Document before-and-after query benchmarks (Assignee: Chen)",
+      "Link the benchmark to the change request (Assignee: Chen)"
+    ],
+    "risks": [
+      "Checkout abandonment caused by peak-traffic API delays"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_performance_005",
+    "tasks": [
+      "Profile the Elasticsearch query by Monday (Assignee: Fatima)",
+      "Propose an index at the performance review (Assignee: Fatima)",
+      "Document before-and-after query benchmarks (Assignee: Fatima)",
+      "Link the benchmark to the change request (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Checkout abandonment caused by peak-traffic API delays"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_integration_001",
+    "tasks": [
+      "Send payload samples to Maya by Tuesday (Assignee: Aniket)",
+      "Request confirmation of the canonical field mapping from Maya (Assignee: Aniket)",
+      "Update the Postgres mapper after Maya's response (Assignee: Aniket)",
+      "Create an automated integration contract test before enabling production traffic (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Billing discrepancies caused by incomplete partner orders"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_integration_002",
+    "tasks": [
+      "Send payload samples to Omar by Wednesday (Assignee: Priya)",
+      "Request confirmation of the canonical field mapping from Omar (Assignee: Priya)",
+      "Update the Redis mapper after Omar's response (Assignee: Priya)",
+      "Create an automated integration contract test before enabling production traffic (Assignee: Priya)"
+    ],
+    "risks": [
+      "Billing discrepancies caused by incomplete partner orders"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_integration_003",
+    "tasks": [
+      "Send payload samples to Nina by Thursday (Assignee: Luis)",
+      "Request confirmation of the canonical field mapping from Nina (Assignee: Luis)",
+      "Update the Kafka mapper after Nina's response (Assignee: Luis)",
+      "Create an automated integration contract test before enabling production traffic (Assignee: Luis)"
+    ],
+    "risks": [
+      "Billing discrepancies caused by incomplete partner orders"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_integration_004",
+    "tasks": [
+      "Send payload samples to Iris by Friday (Assignee: Chen)",
+      "Request confirmation of the canonical field mapping from Iris (Assignee: Chen)",
+      "Update the MongoDB mapper after Iris's response (Assignee: Chen)",
+      "Create an automated integration contract test before enabling production traffic (Assignee: Chen)"
+    ],
+    "risks": [
+      "Billing discrepancies caused by incomplete partner orders"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_integration_005",
+    "tasks": [
+      "Send payload samples to Ravi by Monday (Assignee: Fatima)",
+      "Request confirmation of the canonical field mapping from Ravi (Assignee: Fatima)",
+      "Update the Elasticsearch mapper after Ravi's response (Assignee: Fatima)",
+      "Create an automated integration contract test before enabling production traffic (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Billing discrepancies caused by incomplete partner orders"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_backup_001",
+    "tasks": [
+      "Update the Postgres backup runbook by Tuesday (Assignee: Aniket)",
+      "Repeat the restore drill using the revised runbook (Assignee: Aniket)",
+      "Invite Maya to observe the restore drill (Assignee: Aniket)",
+      "Add achieved recovery time to the resilience report (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Extended incident downtime because the Postgres runbook lacks the encryption step"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_backup_002",
+    "tasks": [
+      "Update the Redis backup runbook by Wednesday (Assignee: Priya)",
+      "Repeat the restore drill using the revised runbook (Assignee: Priya)",
+      "Invite Omar to observe the restore drill (Assignee: Priya)",
+      "Add achieved recovery time to the resilience report (Assignee: Priya)"
+    ],
+    "risks": [
+      "Extended incident downtime because the Redis runbook lacks the encryption step"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_backup_003",
+    "tasks": [
+      "Update the Kafka backup runbook by Thursday (Assignee: Luis)",
+      "Repeat the restore drill using the revised runbook (Assignee: Luis)",
+      "Invite Nina to observe the restore drill (Assignee: Luis)",
+      "Add achieved recovery time to the resilience report (Assignee: Luis)"
+    ],
+    "risks": [
+      "Extended incident downtime because the Kafka runbook lacks the encryption step"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_backup_004",
+    "tasks": [
+      "Update the MongoDB backup runbook by Friday (Assignee: Chen)",
+      "Repeat the restore drill using the revised runbook (Assignee: Chen)",
+      "Invite Iris to observe the restore drill (Assignee: Chen)",
+      "Add achieved recovery time to the resilience report (Assignee: Chen)"
+    ],
+    "risks": [
+      "Extended incident downtime because the MongoDB runbook lacks the encryption step"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_backup_005",
+    "tasks": [
+      "Update the Elasticsearch backup runbook by Monday (Assignee: Fatima)",
+      "Repeat the restore drill using the revised runbook (Assignee: Fatima)",
+      "Invite Ravi to observe the restore drill (Assignee: Fatima)",
+      "Add achieved recovery time to the resilience report (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Extended incident downtime because the Elasticsearch runbook lacks the encryption step"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_budget_001",
+    "tasks": [
+      "Identify idle Postgres capacity by Tuesday (Assignee: Aniket)",
+      "Submit a rightsizing plan with projected savings to Maya (Assignee: Aniket)",
+      "Track approved rightsizing changes (Assignee: Aniket)",
+      "Report first-month savings (Assignee: Aniket)"
+    ],
+    "risks": [
+      "Planned-work cuts caused by continued cloud overspend"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_budget_002",
+    "tasks": [
+      "Identify idle Redis capacity by Wednesday (Assignee: Priya)",
+      "Submit a rightsizing plan with projected savings to Omar (Assignee: Priya)",
+      "Track approved rightsizing changes (Assignee: Priya)",
+      "Report first-month savings (Assignee: Priya)"
+    ],
+    "risks": [
+      "Planned-work cuts caused by continued cloud overspend"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_budget_003",
+    "tasks": [
+      "Identify idle Kafka capacity by Thursday (Assignee: Luis)",
+      "Submit a rightsizing plan with projected savings to Nina (Assignee: Luis)",
+      "Track approved rightsizing changes (Assignee: Luis)",
+      "Report first-month savings (Assignee: Luis)"
+    ],
+    "risks": [
+      "Planned-work cuts caused by continued cloud overspend"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_budget_004",
+    "tasks": [
+      "Identify idle MongoDB capacity by Friday (Assignee: Chen)",
+      "Submit a rightsizing plan with projected savings to Iris (Assignee: Chen)",
+      "Track approved rightsizing changes (Assignee: Chen)",
+      "Report first-month savings (Assignee: Chen)"
+    ],
+    "risks": [
+      "Planned-work cuts caused by continued cloud overspend"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  },
+  {
+    "id": "meet_budget_005",
+    "tasks": [
+      "Identify idle Elasticsearch capacity by Monday (Assignee: Fatima)",
+      "Submit a rightsizing plan with projected savings to Ravi (Assignee: Fatima)",
+      "Track approved rightsizing changes (Assignee: Fatima)",
+      "Report first-month savings (Assignee: Fatima)"
+    ],
+    "risks": [
+      "Planned-work cuts caused by continued cloud overspend"
+    ],
+    "latency_ms": null,
+    "parse_error": null,
+    "judge_fabricated_items": null,
+    "raw_response": null
+  }
+]

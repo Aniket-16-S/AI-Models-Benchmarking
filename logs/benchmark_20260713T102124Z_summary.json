@@ -1,0 +1,2348 @@
+{
+  "generated_at_utc": "2026-07-13T10:45:35.202269+00:00",
+  "records": 65,
+  "groups": [
+    {
+      "model_key": "gpt_4_1",
+      "model": "gpt-4.1",
+      "provider": "openai",
+      "strategy": "zero_shot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "gpt_4_1",
+      "model": "gpt-4.1",
+      "provider": "openai",
+      "strategy": "few_shot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "gpt_4_1",
+      "model": "gpt-4.1",
+      "provider": "openai",
+      "strategy": "cot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "gpt_4_1",
+      "model": "gpt-4.1",
+      "provider": "openai",
+      "strategy": "xml",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "gemini_2_5_flash",
+      "model": "gemini-2.5-flash",
+      "provider": "gemini",
+      "strategy": "zero_shot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "gemini_2_5_flash",
+      "model": "gemini-2.5-flash",
+      "provider": "gemini",
+      "strategy": "few_shot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "gemini_2_5_flash",
+      "model": "gemini-2.5-flash",
+      "provider": "gemini",
+      "strategy": "cot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "gemini_2_5_flash",
+      "model": "gemini-2.5-flash",
+      "provider": "gemini",
+      "strategy": "xml",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "claude_sonnet",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "strategy": "zero_shot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "claude_sonnet",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "strategy": "few_shot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "claude_sonnet",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "strategy": "cot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "claude_sonnet",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "strategy": "xml",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "groq_deepseek",
+      "model": "deepseek-r1-distill-llama-70b",
+      "provider": "groq",
+      "strategy": "zero_shot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "groq_deepseek",
+      "model": "deepseek-r1-distill-llama-70b",
+      "provider": "groq",
+      "strategy": "few_shot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "groq_deepseek",
+      "model": "deepseek-r1-distill-llama-70b",
+      "provider": "groq",
+      "strategy": "cot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "groq_deepseek",
+      "model": "deepseek-r1-distill-llama-70b",
+      "provider": "groq",
+      "strategy": "xml",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "groq_qwen",
+      "model": "qwen/qwen3-32b",
+      "provider": "groq",
+      "strategy": "zero_shot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "groq_qwen",
+      "model": "qwen/qwen3-32b",
+      "provider": "groq",
+      "strategy": "few_shot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "groq_qwen",
+      "model": "qwen/qwen3-32b",
+      "provider": "groq",
+      "strategy": "cot",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    },
+    {
+      "model_key": "groq_qwen",
+      "model": "qwen/qwen3-32b",
+      "provider": "groq",
+      "strategy": "xml",
+      "evaluation": {
+        "records_in_dataset": 65,
+        "records_predicted": 65,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 205
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 65
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 270
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 65,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": {
+        "records_in_dataset": 5,
+        "records_predicted": 5,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 5
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 10
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 5,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 5
+    }
+  ],
+  "pricing": {
+    "gpt_4_1": {
+      "input_per_million_usd": 2.0,
+      "output_per_million_usd": 8.0
+    },
+    "gemini_2_5_flash": {
+      "input_per_million_usd": 0.3,
+      "output_per_million_usd": 2.5
+    },
+    "claude_sonnet": {
+      "input_per_million_usd": 3.0,
+      "output_per_million_usd": 15.0
+    },
+    "groq_deepseek": {
+      "input_per_million_usd": 0.75,
+      "output_per_million_usd": 0.99
+    },
+    "groq_qwen": {
+      "input_per_million_usd": 0.29,
+      "output_per_million_usd": 0.59
+    }
+  }
+}

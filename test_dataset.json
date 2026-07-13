@@ -1,0 +1,862 @@
+[
+  {
+    "id": "meet_migration_001",
+    "transcript": "Sarah: Let’s review the Atlas migration status.\nAniket: The application work is nearly done.\nAniket: Postgres connection pooling drops under peak load.\nSarah: Is that blocking the deployment?\nAniket: Yes, it could cause failed requests in production.\nSarah: What is the next action?\nAniket: I will patch the pool configuration by Tuesday.\nSarah: Please add a load-test result to the release ticket.\nAniket: I will attach it after the configuration change.\nSarah: We will not deploy until the test is green.\nAniket: Understood; I own both follow-ups.",
+    "ground_truth": {
+      "tasks": [
+        "Patch Postgres connection pool configuration by Tuesday (Assignee: Aniket)",
+        "Attach load-test result to the release ticket after the configuration change (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Production request failures caused by dropped Postgres connection pooling"
+      ]
+    }
+  },
+  {
+    "id": "meet_migration_002",
+    "transcript": "Sarah: Let’s review the Beacon migration status.\nPriya: The application work is nearly done.\nPriya: Redis connection pooling drops under peak load.\nSarah: Is that blocking the deployment?\nPriya: Yes, it could cause failed requests in production.\nSarah: What is the next action?\nPriya: I will patch the pool configuration by Wednesday.\nSarah: Please add a load-test result to the release ticket.\nPriya: I will attach it after the configuration change.\nSarah: We will not deploy until the test is green.\nPriya: Understood; I own both follow-ups.",
+    "ground_truth": {
+      "tasks": [
+        "Patch Redis connection pool configuration by Wednesday (Assignee: Priya)",
+        "Attach load-test result to the release ticket after the configuration change (Assignee: Priya)"
+      ],
+      "risks": [
+        "Production request failures caused by dropped Redis connection pooling"
+      ]
+    }
+  },
+  {
+    "id": "meet_migration_003",
+    "transcript": "Sarah: Let’s review the Cedar migration status.\nLuis: The application work is nearly done.\nLuis: Kafka connection pooling drops under peak load.\nSarah: Is that blocking the deployment?\nLuis: Yes, it could cause failed requests in production.\nSarah: What is the next action?\nLuis: I will patch the pool configuration by Thursday.\nSarah: Please add a load-test result to the release ticket.\nLuis: I will attach it after the configuration change.\nSarah: We will not deploy until the test is green.\nLuis: Understood; I own both follow-ups.",
+    "ground_truth": {
+      "tasks": [
+        "Patch Kafka connection pool configuration by Thursday (Assignee: Luis)",
+        "Attach load-test result to the release ticket after the configuration change (Assignee: Luis)"
+      ],
+      "risks": [
+        "Production request failures caused by dropped Kafka connection pooling"
+      ]
+    }
+  },
+  {
+    "id": "meet_migration_004",
+    "transcript": "Sarah: Let’s review the Delta migration status.\nChen: The application work is nearly done.\nChen: MongoDB connection pooling drops under peak load.\nSarah: Is that blocking the deployment?\nChen: Yes, it could cause failed requests in production.\nSarah: What is the next action?\nChen: I will patch the pool configuration by Friday.\nSarah: Please add a load-test result to the release ticket.\nChen: I will attach it after the configuration change.\nSarah: We will not deploy until the test is green.\nChen: Understood; I own both follow-ups.",
+    "ground_truth": {
+      "tasks": [
+        "Patch MongoDB connection pool configuration by Friday (Assignee: Chen)",
+        "Attach load-test result to the release ticket after the configuration change (Assignee: Chen)"
+      ],
+      "risks": [
+        "Production request failures caused by dropped MongoDB connection pooling"
+      ]
+    }
+  },
+  {
+    "id": "meet_migration_005",
+    "transcript": "Sarah: Let’s review the Ember migration status.\nFatima: The application work is nearly done.\nFatima: Elasticsearch connection pooling drops under peak load.\nSarah: Is that blocking the deployment?\nFatima: Yes, it could cause failed requests in production.\nSarah: What is the next action?\nFatima: I will patch the pool configuration by Monday.\nSarah: Please add a load-test result to the release ticket.\nFatima: I will attach it after the configuration change.\nSarah: We will not deploy until the test is green.\nFatima: Understood; I own both follow-ups.",
+    "ground_truth": {
+      "tasks": [
+        "Patch Elasticsearch connection pool configuration by Monday (Assignee: Fatima)",
+        "Attach load-test result to the release ticket after the configuration change (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Production request failures caused by dropped Elasticsearch connection pooling"
+      ]
+    }
+  },
+  {
+    "id": "meet_vendor_001",
+    "transcript": "Maya: The Atlas vendor contract is still unsigned.\nAniket: Legal returned two requested edits.\nMaya: Does the vendor know our launch date?\nAniket: Not yet; they are waiting for the revised agreement.\nMaya: Delayed signature could postpone onboarding.\nAniket: I will send the revised contract to Maya by Tuesday.\nMaya: Ask for a signature timeline in the same email.\nAniket: I will record their response in procurement.\nMaya: Finance approval is already complete.\nAniket: Good, so legal is the only open dependency.\nMaya: Let’s review it in the next stand-up.",
+    "ground_truth": {
+      "tasks": [
+        "Send revised contract to Maya by Tuesday (Assignee: Aniket)",
+        "Record Maya's signature-timeline response in procurement (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Vendor onboarding delay due to an unsigned contract"
+      ]
+    }
+  },
+  {
+    "id": "meet_vendor_002",
+    "transcript": "Maya: The Beacon vendor contract is still unsigned.\nPriya: Legal returned two requested edits.\nMaya: Does the vendor know our launch date?\nPriya: Not yet; they are waiting for the revised agreement.\nMaya: Delayed signature could postpone onboarding.\nPriya: I will send the revised contract to Omar by Wednesday.\nMaya: Ask for a signature timeline in the same email.\nPriya: I will record their response in procurement.\nMaya: Finance approval is already complete.\nPriya: Good, so legal is the only open dependency.\nMaya: Let’s review it in the next stand-up.",
+    "ground_truth": {
+      "tasks": [
+        "Send revised contract to Omar by Wednesday (Assignee: Priya)",
+        "Record Omar's signature-timeline response in procurement (Assignee: Priya)"
+      ],
+      "risks": [
+        "Vendor onboarding delay due to an unsigned contract"
+      ]
+    }
+  },
+  {
+    "id": "meet_vendor_003",
+    "transcript": "Maya: The Cedar vendor contract is still unsigned.\nLuis: Legal returned two requested edits.\nMaya: Does the vendor know our launch date?\nLuis: Not yet; they are waiting for the revised agreement.\nMaya: Delayed signature could postpone onboarding.\nLuis: I will send the revised contract to Nina by Thursday.\nMaya: Ask for a signature timeline in the same email.\nLuis: I will record their response in procurement.\nMaya: Finance approval is already complete.\nLuis: Good, so legal is the only open dependency.\nMaya: Let’s review it in the next stand-up.",
+    "ground_truth": {
+      "tasks": [
+        "Send revised contract to Nina by Thursday (Assignee: Luis)",
+        "Record Nina's signature-timeline response in procurement (Assignee: Luis)"
+      ],
+      "risks": [
+        "Vendor onboarding delay due to an unsigned contract"
+      ]
+    }
+  },
+  {
+    "id": "meet_vendor_004",
+    "transcript": "Maya: The Delta vendor contract is still unsigned.\nChen: Legal returned two requested edits.\nMaya: Does the vendor know our launch date?\nChen: Not yet; they are waiting for the revised agreement.\nMaya: Delayed signature could postpone onboarding.\nChen: I will send the revised contract to Iris by Friday.\nMaya: Ask for a signature timeline in the same email.\nChen: I will record their response in procurement.\nMaya: Finance approval is already complete.\nChen: Good, so legal is the only open dependency.\nMaya: Let’s review it in the next stand-up.",
+    "ground_truth": {
+      "tasks": [
+        "Send revised contract to Iris by Friday (Assignee: Chen)",
+        "Record Iris's signature-timeline response in procurement (Assignee: Chen)"
+      ],
+      "risks": [
+        "Vendor onboarding delay due to an unsigned contract"
+      ]
+    }
+  },
+  {
+    "id": "meet_vendor_005",
+    "transcript": "Maya: The Ember vendor contract is still unsigned.\nFatima: Legal returned two requested edits.\nMaya: Does the vendor know our launch date?\nFatima: Not yet; they are waiting for the revised agreement.\nMaya: Delayed signature could postpone onboarding.\nFatima: I will send the revised contract to Ravi by Monday.\nMaya: Ask for a signature timeline in the same email.\nFatima: I will record their response in procurement.\nMaya: Finance approval is already complete.\nFatima: Good, so legal is the only open dependency.\nMaya: Let’s review it in the next stand-up.",
+    "ground_truth": {
+      "tasks": [
+        "Send revised contract to Ravi by Monday (Assignee: Fatima)",
+        "Record Ravi's signature-timeline response in procurement (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Vendor onboarding delay due to an unsigned contract"
+      ]
+    }
+  },
+  {
+    "id": "meet_incident_001",
+    "transcript": "Iris: Yesterday’s Atlas outage lasted eighteen minutes.\nAniket: The primary symptom was elevated Postgres timeouts.\nIris: Have we confirmed a root cause?\nAniket: No, the logs rotate before the full trace is retained.\nIris: That makes the next incident harder to diagnose.\nAniket: I will extend log retention to thirty days by Tuesday.\nIris: Please also write the incident timeline.\nAniket: I will publish it in the operations channel.\nIris: Customer communications are handled separately.\nAniket: I will link the timeline to the incident ticket.\nIris: Thank you; we need evidence before closing it.",
+    "ground_truth": {
+      "tasks": [
+        "Extend Postgres log retention to thirty days by Tuesday (Assignee: Aniket)",
+        "Publish the incident timeline in the operations channel (Assignee: Aniket)",
+        "Link the incident timeline to the incident ticket (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Future incident root-cause analysis is impaired by short log retention"
+      ]
+    }
+  },
+  {
+    "id": "meet_incident_002",
+    "transcript": "Iris: Yesterday’s Beacon outage lasted eighteen minutes.\nPriya: The primary symptom was elevated Redis timeouts.\nIris: Have we confirmed a root cause?\nPriya: No, the logs rotate before the full trace is retained.\nIris: That makes the next incident harder to diagnose.\nPriya: I will extend log retention to thirty days by Wednesday.\nIris: Please also write the incident timeline.\nPriya: I will publish it in the operations channel.\nIris: Customer communications are handled separately.\nPriya: I will link the timeline to the incident ticket.\nIris: Thank you; we need evidence before closing it.",
+    "ground_truth": {
+      "tasks": [
+        "Extend Redis log retention to thirty days by Wednesday (Assignee: Priya)",
+        "Publish the incident timeline in the operations channel (Assignee: Priya)",
+        "Link the incident timeline to the incident ticket (Assignee: Priya)"
+      ],
+      "risks": [
+        "Future incident root-cause analysis is impaired by short log retention"
+      ]
+    }
+  },
+  {
+    "id": "meet_incident_003",
+    "transcript": "Iris: Yesterday’s Cedar outage lasted eighteen minutes.\nLuis: The primary symptom was elevated Kafka timeouts.\nIris: Have we confirmed a root cause?\nLuis: No, the logs rotate before the full trace is retained.\nIris: That makes the next incident harder to diagnose.\nLuis: I will extend log retention to thirty days by Thursday.\nIris: Please also write the incident timeline.\nLuis: I will publish it in the operations channel.\nIris: Customer communications are handled separately.\nLuis: I will link the timeline to the incident ticket.\nIris: Thank you; we need evidence before closing it.",
+    "ground_truth": {
+      "tasks": [
+        "Extend Kafka log retention to thirty days by Thursday (Assignee: Luis)",
+        "Publish the incident timeline in the operations channel (Assignee: Luis)",
+        "Link the incident timeline to the incident ticket (Assignee: Luis)"
+      ],
+      "risks": [
+        "Future incident root-cause analysis is impaired by short log retention"
+      ]
+    }
+  },
+  {
+    "id": "meet_incident_004",
+    "transcript": "Iris: Yesterday’s Delta outage lasted eighteen minutes.\nChen: The primary symptom was elevated MongoDB timeouts.\nIris: Have we confirmed a root cause?\nChen: No, the logs rotate before the full trace is retained.\nIris: That makes the next incident harder to diagnose.\nChen: I will extend log retention to thirty days by Friday.\nIris: Please also write the incident timeline.\nChen: I will publish it in the operations channel.\nIris: Customer communications are handled separately.\nChen: I will link the timeline to the incident ticket.\nIris: Thank you; we need evidence before closing it.",
+    "ground_truth": {
+      "tasks": [
+        "Extend MongoDB log retention to thirty days by Friday (Assignee: Chen)",
+        "Publish the incident timeline in the operations channel (Assignee: Chen)",
+        "Link the incident timeline to the incident ticket (Assignee: Chen)"
+      ],
+      "risks": [
+        "Future incident root-cause analysis is impaired by short log retention"
+      ]
+    }
+  },
+  {
+    "id": "meet_incident_005",
+    "transcript": "Iris: Yesterday’s Ember outage lasted eighteen minutes.\nFatima: The primary symptom was elevated Elasticsearch timeouts.\nIris: Have we confirmed a root cause?\nFatima: No, the logs rotate before the full trace is retained.\nIris: That makes the next incident harder to diagnose.\nFatima: I will extend log retention to thirty days by Monday.\nIris: Please also write the incident timeline.\nFatima: I will publish it in the operations channel.\nIris: Customer communications are handled separately.\nFatima: I will link the timeline to the incident ticket.\nIris: Thank you; we need evidence before closing it.",
+    "ground_truth": {
+      "tasks": [
+        "Extend Elasticsearch log retention to thirty days by Monday (Assignee: Fatima)",
+        "Publish the incident timeline in the operations channel (Assignee: Fatima)",
+        "Link the incident timeline to the incident ticket (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Future incident root-cause analysis is impaired by short log retention"
+      ]
+    }
+  },
+  {
+    "id": "meet_security_001",
+    "transcript": "Ravi: The Atlas security scan found a critical library vulnerability.\nAniket: It is in the Postgres client package.\nRavi: Is there a patched release available?\nAniket: Yes, but we have not tested compatibility.\nRavi: Leaving it unpatched exposes the service to a known exploit.\nAniket: I will upgrade the package in staging by Tuesday.\nRavi: Run the regression suite before merging.\nAniket: I will post the test outcome to the security ticket.\nRavi: Production rollout needs my approval.\nAniket: I will request it after staging passes.\nRavi: Keep the scan finding open until then.",
+    "ground_truth": {
+      "tasks": [
+        "Upgrade the Postgres client package in staging by Tuesday (Assignee: Aniket)",
+        "Post regression-test outcome to the security ticket (Assignee: Aniket)",
+        "Request Ravi's production-rollout approval after staging passes (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Known exploit exposure from an unpatched Postgres client vulnerability"
+      ]
+    }
+  },
+  {
+    "id": "meet_security_002",
+    "transcript": "Ravi: The Beacon security scan found a critical library vulnerability.\nPriya: It is in the Redis client package.\nRavi: Is there a patched release available?\nPriya: Yes, but we have not tested compatibility.\nRavi: Leaving it unpatched exposes the service to a known exploit.\nPriya: I will upgrade the package in staging by Wednesday.\nRavi: Run the regression suite before merging.\nPriya: I will post the test outcome to the security ticket.\nRavi: Production rollout needs my approval.\nPriya: I will request it after staging passes.\nRavi: Keep the scan finding open until then.",
+    "ground_truth": {
+      "tasks": [
+        "Upgrade the Redis client package in staging by Wednesday (Assignee: Priya)",
+        "Post regression-test outcome to the security ticket (Assignee: Priya)",
+        "Request Ravi's production-rollout approval after staging passes (Assignee: Priya)"
+      ],
+      "risks": [
+        "Known exploit exposure from an unpatched Redis client vulnerability"
+      ]
+    }
+  },
+  {
+    "id": "meet_security_003",
+    "transcript": "Ravi: The Cedar security scan found a critical library vulnerability.\nLuis: It is in the Kafka client package.\nRavi: Is there a patched release available?\nLuis: Yes, but we have not tested compatibility.\nRavi: Leaving it unpatched exposes the service to a known exploit.\nLuis: I will upgrade the package in staging by Thursday.\nRavi: Run the regression suite before merging.\nLuis: I will post the test outcome to the security ticket.\nRavi: Production rollout needs my approval.\nLuis: I will request it after staging passes.\nRavi: Keep the scan finding open until then.",
+    "ground_truth": {
+      "tasks": [
+        "Upgrade the Kafka client package in staging by Thursday (Assignee: Luis)",
+        "Post regression-test outcome to the security ticket (Assignee: Luis)",
+        "Request Ravi's production-rollout approval after staging passes (Assignee: Luis)"
+      ],
+      "risks": [
+        "Known exploit exposure from an unpatched Kafka client vulnerability"
+      ]
+    }
+  },
+  {
+    "id": "meet_security_004",
+    "transcript": "Ravi: The Delta security scan found a critical library vulnerability.\nChen: It is in the MongoDB client package.\nRavi: Is there a patched release available?\nChen: Yes, but we have not tested compatibility.\nRavi: Leaving it unpatched exposes the service to a known exploit.\nChen: I will upgrade the package in staging by Friday.\nRavi: Run the regression suite before merging.\nChen: I will post the test outcome to the security ticket.\nRavi: Production rollout needs my approval.\nChen: I will request it after staging passes.\nRavi: Keep the scan finding open until then.",
+    "ground_truth": {
+      "tasks": [
+        "Upgrade the MongoDB client package in staging by Friday (Assignee: Chen)",
+        "Post regression-test outcome to the security ticket (Assignee: Chen)",
+        "Request Ravi's production-rollout approval after staging passes (Assignee: Chen)"
+      ],
+      "risks": [
+        "Known exploit exposure from an unpatched MongoDB client vulnerability"
+      ]
+    }
+  },
+  {
+    "id": "meet_security_005",
+    "transcript": "Ravi: The Ember security scan found a critical library vulnerability.\nFatima: It is in the Elasticsearch client package.\nRavi: Is there a patched release available?\nFatima: Yes, but we have not tested compatibility.\nRavi: Leaving it unpatched exposes the service to a known exploit.\nFatima: I will upgrade the package in staging by Monday.\nRavi: Run the regression suite before merging.\nFatima: I will post the test outcome to the security ticket.\nRavi: Production rollout needs my approval.\nFatima: I will request it after staging passes.\nRavi: Keep the scan finding open until then.",
+    "ground_truth": {
+      "tasks": [
+        "Upgrade the Elasticsearch client package in staging by Monday (Assignee: Fatima)",
+        "Post regression-test outcome to the security ticket (Assignee: Fatima)",
+        "Request Ravi's production-rollout approval after staging passes (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Known exploit exposure from an unpatched Elasticsearch client vulnerability"
+      ]
+    }
+  },
+  {
+    "id": "meet_data_quality_001",
+    "transcript": "Nina: The Atlas dashboard totals do not match finance.\nAniket: Duplicate events are arriving from the Postgres pipeline.\nNina: Are executives using this dashboard?\nAniket: Yes, it feeds the weekly revenue review.\nNina: Incorrect totals could lead to a bad revenue decision.\nAniket: I will add a deduplication rule by Tuesday.\nNina: Please backfill the affected reporting period too.\nAniket: I will validate the corrected total with Maya.\nNina: Mark the dashboard as provisional until validation.\nAniket: I will add that notice today.\nNina: Good; do not remove it early.",
+    "ground_truth": {
+      "tasks": [
+        "Add a deduplication rule to the Postgres pipeline by Tuesday (Assignee: Aniket)",
+        "Backfill the affected reporting period (Assignee: Aniket)",
+        "Validate corrected dashboard totals with Maya (Assignee: Aniket)",
+        "Mark the dashboard as provisional today (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Incorrect revenue decisions caused by duplicate-event dashboard totals"
+      ]
+    }
+  },
+  {
+    "id": "meet_data_quality_002",
+    "transcript": "Nina: The Beacon dashboard totals do not match finance.\nPriya: Duplicate events are arriving from the Redis pipeline.\nNina: Are executives using this dashboard?\nPriya: Yes, it feeds the weekly revenue review.\nNina: Incorrect totals could lead to a bad revenue decision.\nPriya: I will add a deduplication rule by Wednesday.\nNina: Please backfill the affected reporting period too.\nPriya: I will validate the corrected total with Omar.\nNina: Mark the dashboard as provisional until validation.\nPriya: I will add that notice today.\nNina: Good; do not remove it early.",
+    "ground_truth": {
+      "tasks": [
+        "Add a deduplication rule to the Redis pipeline by Wednesday (Assignee: Priya)",
+        "Backfill the affected reporting period (Assignee: Priya)",
+        "Validate corrected dashboard totals with Omar (Assignee: Priya)",
+        "Mark the dashboard as provisional today (Assignee: Priya)"
+      ],
+      "risks": [
+        "Incorrect revenue decisions caused by duplicate-event dashboard totals"
+      ]
+    }
+  },
+  {
+    "id": "meet_data_quality_003",
+    "transcript": "Nina: The Cedar dashboard totals do not match finance.\nLuis: Duplicate events are arriving from the Kafka pipeline.\nNina: Are executives using this dashboard?\nLuis: Yes, it feeds the weekly revenue review.\nNina: Incorrect totals could lead to a bad revenue decision.\nLuis: I will add a deduplication rule by Thursday.\nNina: Please backfill the affected reporting period too.\nLuis: I will validate the corrected total with Nina.\nNina: Mark the dashboard as provisional until validation.\nLuis: I will add that notice today.\nNina: Good; do not remove it early.",
+    "ground_truth": {
+      "tasks": [
+        "Add a deduplication rule to the Kafka pipeline by Thursday (Assignee: Luis)",
+        "Backfill the affected reporting period (Assignee: Luis)",
+        "Validate corrected dashboard totals with Nina (Assignee: Luis)",
+        "Mark the dashboard as provisional today (Assignee: Luis)"
+      ],
+      "risks": [
+        "Incorrect revenue decisions caused by duplicate-event dashboard totals"
+      ]
+    }
+  },
+  {
+    "id": "meet_data_quality_004",
+    "transcript": "Nina: The Delta dashboard totals do not match finance.\nChen: Duplicate events are arriving from the MongoDB pipeline.\nNina: Are executives using this dashboard?\nChen: Yes, it feeds the weekly revenue review.\nNina: Incorrect totals could lead to a bad revenue decision.\nChen: I will add a deduplication rule by Friday.\nNina: Please backfill the affected reporting period too.\nChen: I will validate the corrected total with Iris.\nNina: Mark the dashboard as provisional until validation.\nChen: I will add that notice today.\nNina: Good; do not remove it early.",
+    "ground_truth": {
+      "tasks": [
+        "Add a deduplication rule to the MongoDB pipeline by Friday (Assignee: Chen)",
+        "Backfill the affected reporting period (Assignee: Chen)",
+        "Validate corrected dashboard totals with Iris (Assignee: Chen)",
+        "Mark the dashboard as provisional today (Assignee: Chen)"
+      ],
+      "risks": [
+        "Incorrect revenue decisions caused by duplicate-event dashboard totals"
+      ]
+    }
+  },
+  {
+    "id": "meet_data_quality_005",
+    "transcript": "Nina: The Ember dashboard totals do not match finance.\nFatima: Duplicate events are arriving from the Elasticsearch pipeline.\nNina: Are executives using this dashboard?\nFatima: Yes, it feeds the weekly revenue review.\nNina: Incorrect totals could lead to a bad revenue decision.\nFatima: I will add a deduplication rule by Monday.\nNina: Please backfill the affected reporting period too.\nFatima: I will validate the corrected total with Ravi.\nNina: Mark the dashboard as provisional until validation.\nFatima: I will add that notice today.\nNina: Good; do not remove it early.",
+    "ground_truth": {
+      "tasks": [
+        "Add a deduplication rule to the Elasticsearch pipeline by Monday (Assignee: Fatima)",
+        "Backfill the affected reporting period (Assignee: Fatima)",
+        "Validate corrected dashboard totals with Ravi (Assignee: Fatima)",
+        "Mark the dashboard as provisional today (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Incorrect revenue decisions caused by duplicate-event dashboard totals"
+      ]
+    }
+  },
+  {
+    "id": "meet_launch_001",
+    "transcript": "Omar: The Atlas launch checklist is almost complete.\nAniket: The only missing item is the Postgres rollback procedure.\nOmar: Can the team deploy without it?\nAniket: We could, but recovery would be slow if the release fails.\nOmar: That is an unacceptable launch risk.\nAniket: I will draft the rollback procedure by Tuesday.\nOmar: Walk the on-call team through it afterward.\nAniket: I will schedule the walkthrough with Maya.\nOmar: Capture the dry-run result in the checklist.\nAniket: I will update it after the walkthrough.\nOmar: Launch remains conditional on a successful dry run.",
+    "ground_truth": {
+      "tasks": [
+        "Draft the Postgres rollback procedure by Tuesday (Assignee: Aniket)",
+        "Schedule rollback walkthrough with Maya (Assignee: Aniket)",
+        "Update the launch checklist with the dry-run result (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Slow recovery from a failed release without a Postgres rollback procedure"
+      ]
+    }
+  },
+  {
+    "id": "meet_launch_002",
+    "transcript": "Omar: The Beacon launch checklist is almost complete.\nPriya: The only missing item is the Redis rollback procedure.\nOmar: Can the team deploy without it?\nPriya: We could, but recovery would be slow if the release fails.\nOmar: That is an unacceptable launch risk.\nPriya: I will draft the rollback procedure by Wednesday.\nOmar: Walk the on-call team through it afterward.\nPriya: I will schedule the walkthrough with Omar.\nOmar: Capture the dry-run result in the checklist.\nPriya: I will update it after the walkthrough.\nOmar: Launch remains conditional on a successful dry run.",
+    "ground_truth": {
+      "tasks": [
+        "Draft the Redis rollback procedure by Wednesday (Assignee: Priya)",
+        "Schedule rollback walkthrough with Omar (Assignee: Priya)",
+        "Update the launch checklist with the dry-run result (Assignee: Priya)"
+      ],
+      "risks": [
+        "Slow recovery from a failed release without a Redis rollback procedure"
+      ]
+    }
+  },
+  {
+    "id": "meet_launch_003",
+    "transcript": "Omar: The Cedar launch checklist is almost complete.\nLuis: The only missing item is the Kafka rollback procedure.\nOmar: Can the team deploy without it?\nLuis: We could, but recovery would be slow if the release fails.\nOmar: That is an unacceptable launch risk.\nLuis: I will draft the rollback procedure by Thursday.\nOmar: Walk the on-call team through it afterward.\nLuis: I will schedule the walkthrough with Nina.\nOmar: Capture the dry-run result in the checklist.\nLuis: I will update it after the walkthrough.\nOmar: Launch remains conditional on a successful dry run.",
+    "ground_truth": {
+      "tasks": [
+        "Draft the Kafka rollback procedure by Thursday (Assignee: Luis)",
+        "Schedule rollback walkthrough with Nina (Assignee: Luis)",
+        "Update the launch checklist with the dry-run result (Assignee: Luis)"
+      ],
+      "risks": [
+        "Slow recovery from a failed release without a Kafka rollback procedure"
+      ]
+    }
+  },
+  {
+    "id": "meet_launch_004",
+    "transcript": "Omar: The Delta launch checklist is almost complete.\nChen: The only missing item is the MongoDB rollback procedure.\nOmar: Can the team deploy without it?\nChen: We could, but recovery would be slow if the release fails.\nOmar: That is an unacceptable launch risk.\nChen: I will draft the rollback procedure by Friday.\nOmar: Walk the on-call team through it afterward.\nChen: I will schedule the walkthrough with Iris.\nOmar: Capture the dry-run result in the checklist.\nChen: I will update it after the walkthrough.\nOmar: Launch remains conditional on a successful dry run.",
+    "ground_truth": {
+      "tasks": [
+        "Draft the MongoDB rollback procedure by Friday (Assignee: Chen)",
+        "Schedule rollback walkthrough with Iris (Assignee: Chen)",
+        "Update the launch checklist with the dry-run result (Assignee: Chen)"
+      ],
+      "risks": [
+        "Slow recovery from a failed release without a MongoDB rollback procedure"
+      ]
+    }
+  },
+  {
+    "id": "meet_launch_005",
+    "transcript": "Omar: The Ember launch checklist is almost complete.\nFatima: The only missing item is the Elasticsearch rollback procedure.\nOmar: Can the team deploy without it?\nFatima: We could, but recovery would be slow if the release fails.\nOmar: That is an unacceptable launch risk.\nFatima: I will draft the rollback procedure by Monday.\nOmar: Walk the on-call team through it afterward.\nFatima: I will schedule the walkthrough with Ravi.\nOmar: Capture the dry-run result in the checklist.\nFatima: I will update it after the walkthrough.\nOmar: Launch remains conditional on a successful dry run.",
+    "ground_truth": {
+      "tasks": [
+        "Draft the Elasticsearch rollback procedure by Monday (Assignee: Fatima)",
+        "Schedule rollback walkthrough with Ravi (Assignee: Fatima)",
+        "Update the launch checklist with the dry-run result (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Slow recovery from a failed release without a Elasticsearch rollback procedure"
+      ]
+    }
+  },
+  {
+    "id": "meet_hiring_001",
+    "transcript": "Chen: The Atlas team still has an open data-engineer role.\nAniket: We have screened six candidates.\nChen: Why has no interview panel been scheduled?\nAniket: The interview rubric has not been approved.\nChen: The vacancy may delay the Postgres migration.\nAniket: I will send the rubric to Maya for approval by Tuesday.\nChen: Book panels as soon as it is approved.\nAniket: I will coordinate available interviewers.\nChen: Recruiting will continue sourcing in parallel.\nAniket: I will update the hiring tracker.\nChen: Escalate if approval slips past the date.",
+    "ground_truth": {
+      "tasks": [
+        "Send interview rubric to Maya for approval by Tuesday (Assignee: Aniket)",
+        "Coordinate interviewer availability after rubric approval (Assignee: Aniket)",
+        "Update the hiring tracker (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Postgres migration delay caused by the unfilled data-engineer role"
+      ]
+    }
+  },
+  {
+    "id": "meet_hiring_002",
+    "transcript": "Chen: The Beacon team still has an open data-engineer role.\nPriya: We have screened six candidates.\nChen: Why has no interview panel been scheduled?\nPriya: The interview rubric has not been approved.\nChen: The vacancy may delay the Redis migration.\nPriya: I will send the rubric to Omar for approval by Wednesday.\nChen: Book panels as soon as it is approved.\nPriya: I will coordinate available interviewers.\nChen: Recruiting will continue sourcing in parallel.\nPriya: I will update the hiring tracker.\nChen: Escalate if approval slips past the date.",
+    "ground_truth": {
+      "tasks": [
+        "Send interview rubric to Omar for approval by Wednesday (Assignee: Priya)",
+        "Coordinate interviewer availability after rubric approval (Assignee: Priya)",
+        "Update the hiring tracker (Assignee: Priya)"
+      ],
+      "risks": [
+        "Redis migration delay caused by the unfilled data-engineer role"
+      ]
+    }
+  },
+  {
+    "id": "meet_hiring_003",
+    "transcript": "Chen: The Cedar team still has an open data-engineer role.\nLuis: We have screened six candidates.\nChen: Why has no interview panel been scheduled?\nLuis: The interview rubric has not been approved.\nChen: The vacancy may delay the Kafka migration.\nLuis: I will send the rubric to Nina for approval by Thursday.\nChen: Book panels as soon as it is approved.\nLuis: I will coordinate available interviewers.\nChen: Recruiting will continue sourcing in parallel.\nLuis: I will update the hiring tracker.\nChen: Escalate if approval slips past the date.",
+    "ground_truth": {
+      "tasks": [
+        "Send interview rubric to Nina for approval by Thursday (Assignee: Luis)",
+        "Coordinate interviewer availability after rubric approval (Assignee: Luis)",
+        "Update the hiring tracker (Assignee: Luis)"
+      ],
+      "risks": [
+        "Kafka migration delay caused by the unfilled data-engineer role"
+      ]
+    }
+  },
+  {
+    "id": "meet_hiring_004",
+    "transcript": "Chen: The Delta team still has an open data-engineer role.\nChen: We have screened six candidates.\nChen: Why has no interview panel been scheduled?\nChen: The interview rubric has not been approved.\nChen: The vacancy may delay the MongoDB migration.\nChen: I will send the rubric to Iris for approval by Friday.\nChen: Book panels as soon as it is approved.\nChen: I will coordinate available interviewers.\nChen: Recruiting will continue sourcing in parallel.\nChen: I will update the hiring tracker.\nChen: Escalate if approval slips past the date.",
+    "ground_truth": {
+      "tasks": [
+        "Send interview rubric to Iris for approval by Friday (Assignee: Chen)",
+        "Coordinate interviewer availability after rubric approval (Assignee: Chen)",
+        "Update the hiring tracker (Assignee: Chen)"
+      ],
+      "risks": [
+        "MongoDB migration delay caused by the unfilled data-engineer role"
+      ]
+    }
+  },
+  {
+    "id": "meet_hiring_005",
+    "transcript": "Chen: The Ember team still has an open data-engineer role.\nFatima: We have screened six candidates.\nChen: Why has no interview panel been scheduled?\nFatima: The interview rubric has not been approved.\nChen: The vacancy may delay the Elasticsearch migration.\nFatima: I will send the rubric to Ravi for approval by Monday.\nChen: Book panels as soon as it is approved.\nFatima: I will coordinate available interviewers.\nChen: Recruiting will continue sourcing in parallel.\nFatima: I will update the hiring tracker.\nChen: Escalate if approval slips past the date.",
+    "ground_truth": {
+      "tasks": [
+        "Send interview rubric to Ravi for approval by Monday (Assignee: Fatima)",
+        "Coordinate interviewer availability after rubric approval (Assignee: Fatima)",
+        "Update the hiring tracker (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Elasticsearch migration delay caused by the unfilled data-engineer role"
+      ]
+    }
+  },
+  {
+    "id": "meet_compliance_001",
+    "transcript": "Fatima: The Atlas audit evidence is incomplete.\nAniket: We are missing access-review records for Postgres.\nFatima: When is the external audit?\nAniket: It begins next week.\nFatima: Missing records could produce an audit finding.\nAniket: I will export the access-review records by Tuesday.\nFatima: Have Maya verify the export is complete.\nAniket: I will request that verification immediately.\nFatima: Store the final evidence in the audit folder.\nAniket: I will upload it after verification.\nFatima: Please notify me once it is available.",
+    "ground_truth": {
+      "tasks": [
+        "Export Postgres access-review records by Tuesday (Assignee: Aniket)",
+        "Request export-completeness verification from Maya (Assignee: Aniket)",
+        "Upload final access-review evidence to the audit folder after verification (Assignee: Aniket)",
+        "Notify Fatima when the audit evidence is available (Assignee: Aniket)"
+      ],
+      "risks": [
+        "External audit finding caused by missing Postgres access-review records"
+      ]
+    }
+  },
+  {
+    "id": "meet_compliance_002",
+    "transcript": "Fatima: The Beacon audit evidence is incomplete.\nPriya: We are missing access-review records for Redis.\nFatima: When is the external audit?\nPriya: It begins next week.\nFatima: Missing records could produce an audit finding.\nPriya: I will export the access-review records by Wednesday.\nFatima: Have Omar verify the export is complete.\nPriya: I will request that verification immediately.\nFatima: Store the final evidence in the audit folder.\nPriya: I will upload it after verification.\nFatima: Please notify me once it is available.",
+    "ground_truth": {
+      "tasks": [
+        "Export Redis access-review records by Wednesday (Assignee: Priya)",
+        "Request export-completeness verification from Omar (Assignee: Priya)",
+        "Upload final access-review evidence to the audit folder after verification (Assignee: Priya)",
+        "Notify Fatima when the audit evidence is available (Assignee: Priya)"
+      ],
+      "risks": [
+        "External audit finding caused by missing Redis access-review records"
+      ]
+    }
+  },
+  {
+    "id": "meet_compliance_003",
+    "transcript": "Fatima: The Cedar audit evidence is incomplete.\nLuis: We are missing access-review records for Kafka.\nFatima: When is the external audit?\nLuis: It begins next week.\nFatima: Missing records could produce an audit finding.\nLuis: I will export the access-review records by Thursday.\nFatima: Have Nina verify the export is complete.\nLuis: I will request that verification immediately.\nFatima: Store the final evidence in the audit folder.\nLuis: I will upload it after verification.\nFatima: Please notify me once it is available.",
+    "ground_truth": {
+      "tasks": [
+        "Export Kafka access-review records by Thursday (Assignee: Luis)",
+        "Request export-completeness verification from Nina (Assignee: Luis)",
+        "Upload final access-review evidence to the audit folder after verification (Assignee: Luis)",
+        "Notify Fatima when the audit evidence is available (Assignee: Luis)"
+      ],
+      "risks": [
+        "External audit finding caused by missing Kafka access-review records"
+      ]
+    }
+  },
+  {
+    "id": "meet_compliance_004",
+    "transcript": "Fatima: The Delta audit evidence is incomplete.\nChen: We are missing access-review records for MongoDB.\nFatima: When is the external audit?\nChen: It begins next week.\nFatima: Missing records could produce an audit finding.\nChen: I will export the access-review records by Friday.\nFatima: Have Iris verify the export is complete.\nChen: I will request that verification immediately.\nFatima: Store the final evidence in the audit folder.\nChen: I will upload it after verification.\nFatima: Please notify me once it is available.",
+    "ground_truth": {
+      "tasks": [
+        "Export MongoDB access-review records by Friday (Assignee: Chen)",
+        "Request export-completeness verification from Iris (Assignee: Chen)",
+        "Upload final access-review evidence to the audit folder after verification (Assignee: Chen)",
+        "Notify Fatima when the audit evidence is available (Assignee: Chen)"
+      ],
+      "risks": [
+        "External audit finding caused by missing MongoDB access-review records"
+      ]
+    }
+  },
+  {
+    "id": "meet_compliance_005",
+    "transcript": "Fatima: The Ember audit evidence is incomplete.\nFatima: We are missing access-review records for Elasticsearch.\nFatima: When is the external audit?\nFatima: It begins next week.\nFatima: Missing records could produce an audit finding.\nFatima: I will export the access-review records by Monday.\nFatima: Have Ravi verify the export is complete.\nFatima: I will request that verification immediately.\nFatima: Store the final evidence in the audit folder.\nFatima: I will upload it after verification.\nFatima: Please notify me once it is available.",
+    "ground_truth": {
+      "tasks": [
+        "Export Elasticsearch access-review records by Monday (Assignee: Fatima)",
+        "Request export-completeness verification from Ravi (Assignee: Fatima)",
+        "Upload final access-review evidence to the audit folder after verification (Assignee: Fatima)",
+        "Notify Fatima when the audit evidence is available (Assignee: Fatima)"
+      ],
+      "risks": [
+        "External audit finding caused by missing Elasticsearch access-review records"
+      ]
+    }
+  },
+  {
+    "id": "meet_performance_001",
+    "transcript": "Luis: The Atlas API response time increased after the last release.\nAniket: The Postgres query is consuming most of the request time.\nLuis: Is the customer-facing endpoint affected?\nAniket: Yes, users see delays during peak traffic.\nLuis: Continued delays may increase checkout abandonment.\nAniket: I will profile the query by Tuesday.\nLuis: Bring a proposed index to the performance review.\nAniket: I will document the benchmark before and after the change.\nLuis: Do not ship an index without the benchmark.\nAniket: Agreed; I will link it to the change request.\nLuis: We need a measurable improvement.",
+    "ground_truth": {
+      "tasks": [
+        "Profile the Postgres query by Tuesday (Assignee: Aniket)",
+        "Propose an index at the performance review (Assignee: Aniket)",
+        "Document before-and-after query benchmarks (Assignee: Aniket)",
+        "Link the benchmark to the change request (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Checkout abandonment caused by peak-traffic API delays"
+      ]
+    }
+  },
+  {
+    "id": "meet_performance_002",
+    "transcript": "Luis: The Beacon API response time increased after the last release.\nPriya: The Redis query is consuming most of the request time.\nLuis: Is the customer-facing endpoint affected?\nPriya: Yes, users see delays during peak traffic.\nLuis: Continued delays may increase checkout abandonment.\nPriya: I will profile the query by Wednesday.\nLuis: Bring a proposed index to the performance review.\nPriya: I will document the benchmark before and after the change.\nLuis: Do not ship an index without the benchmark.\nPriya: Agreed; I will link it to the change request.\nLuis: We need a measurable improvement.",
+    "ground_truth": {
+      "tasks": [
+        "Profile the Redis query by Wednesday (Assignee: Priya)",
+        "Propose an index at the performance review (Assignee: Priya)",
+        "Document before-and-after query benchmarks (Assignee: Priya)",
+        "Link the benchmark to the change request (Assignee: Priya)"
+      ],
+      "risks": [
+        "Checkout abandonment caused by peak-traffic API delays"
+      ]
+    }
+  },
+  {
+    "id": "meet_performance_003",
+    "transcript": "Luis: The Cedar API response time increased after the last release.\nLuis: The Kafka query is consuming most of the request time.\nLuis: Is the customer-facing endpoint affected?\nLuis: Yes, users see delays during peak traffic.\nLuis: Continued delays may increase checkout abandonment.\nLuis: I will profile the query by Thursday.\nLuis: Bring a proposed index to the performance review.\nLuis: I will document the benchmark before and after the change.\nLuis: Do not ship an index without the benchmark.\nLuis: Agreed; I will link it to the change request.\nLuis: We need a measurable improvement.",
+    "ground_truth": {
+      "tasks": [
+        "Profile the Kafka query by Thursday (Assignee: Luis)",
+        "Propose an index at the performance review (Assignee: Luis)",
+        "Document before-and-after query benchmarks (Assignee: Luis)",
+        "Link the benchmark to the change request (Assignee: Luis)"
+      ],
+      "risks": [
+        "Checkout abandonment caused by peak-traffic API delays"
+      ]
+    }
+  },
+  {
+    "id": "meet_performance_004",
+    "transcript": "Luis: The Delta API response time increased after the last release.\nChen: The MongoDB query is consuming most of the request time.\nLuis: Is the customer-facing endpoint affected?\nChen: Yes, users see delays during peak traffic.\nLuis: Continued delays may increase checkout abandonment.\nChen: I will profile the query by Friday.\nLuis: Bring a proposed index to the performance review.\nChen: I will document the benchmark before and after the change.\nLuis: Do not ship an index without the benchmark.\nChen: Agreed; I will link it to the change request.\nLuis: We need a measurable improvement.",
+    "ground_truth": {
+      "tasks": [
+        "Profile the MongoDB query by Friday (Assignee: Chen)",
+        "Propose an index at the performance review (Assignee: Chen)",
+        "Document before-and-after query benchmarks (Assignee: Chen)",
+        "Link the benchmark to the change request (Assignee: Chen)"
+      ],
+      "risks": [
+        "Checkout abandonment caused by peak-traffic API delays"
+      ]
+    }
+  },
+  {
+    "id": "meet_performance_005",
+    "transcript": "Luis: The Ember API response time increased after the last release.\nFatima: The Elasticsearch query is consuming most of the request time.\nLuis: Is the customer-facing endpoint affected?\nFatima: Yes, users see delays during peak traffic.\nLuis: Continued delays may increase checkout abandonment.\nFatima: I will profile the query by Monday.\nLuis: Bring a proposed index to the performance review.\nFatima: I will document the benchmark before and after the change.\nLuis: Do not ship an index without the benchmark.\nFatima: Agreed; I will link it to the change request.\nLuis: We need a measurable improvement.",
+    "ground_truth": {
+      "tasks": [
+        "Profile the Elasticsearch query by Monday (Assignee: Fatima)",
+        "Propose an index at the performance review (Assignee: Fatima)",
+        "Document before-and-after query benchmarks (Assignee: Fatima)",
+        "Link the benchmark to the change request (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Checkout abandonment caused by peak-traffic API delays"
+      ]
+    }
+  },
+  {
+    "id": "meet_integration_001",
+    "transcript": "Priya: The Atlas partner integration is returning incomplete orders.\nAniket: The Postgres mapping omits the tax field.\nPriya: Has the partner confirmed their payload format?\nAniket: Not yet; their documentation conflicts with the sandbox.\nPriya: Incomplete orders could create billing discrepancies.\nAniket: I will send payload samples to Maya by Tuesday.\nPriya: Ask them to confirm the canonical field mapping.\nAniket: I will update our mapper after their response.\nPriya: Add an automated contract test as well.\nAniket: I will create it before enabling production traffic.\nPriya: Keep the feature flag off until then.",
+    "ground_truth": {
+      "tasks": [
+        "Send payload samples to Maya by Tuesday (Assignee: Aniket)",
+        "Request confirmation of the canonical field mapping from Maya (Assignee: Aniket)",
+        "Update the Postgres mapper after Maya's response (Assignee: Aniket)",
+        "Create an automated integration contract test before enabling production traffic (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Billing discrepancies caused by incomplete partner orders"
+      ]
+    }
+  },
+  {
+    "id": "meet_integration_002",
+    "transcript": "Priya: The Beacon partner integration is returning incomplete orders.\nPriya: The Redis mapping omits the tax field.\nPriya: Has the partner confirmed their payload format?\nPriya: Not yet; their documentation conflicts with the sandbox.\nPriya: Incomplete orders could create billing discrepancies.\nPriya: I will send payload samples to Omar by Wednesday.\nPriya: Ask them to confirm the canonical field mapping.\nPriya: I will update our mapper after their response.\nPriya: Add an automated contract test as well.\nPriya: I will create it before enabling production traffic.\nPriya: Keep the feature flag off until then.",
+    "ground_truth": {
+      "tasks": [
+        "Send payload samples to Omar by Wednesday (Assignee: Priya)",
+        "Request confirmation of the canonical field mapping from Omar (Assignee: Priya)",
+        "Update the Redis mapper after Omar's response (Assignee: Priya)",
+        "Create an automated integration contract test before enabling production traffic (Assignee: Priya)"
+      ],
+      "risks": [
+        "Billing discrepancies caused by incomplete partner orders"
+      ]
+    }
+  },
+  {
+    "id": "meet_integration_003",
+    "transcript": "Priya: The Cedar partner integration is returning incomplete orders.\nLuis: The Kafka mapping omits the tax field.\nPriya: Has the partner confirmed their payload format?\nLuis: Not yet; their documentation conflicts with the sandbox.\nPriya: Incomplete orders could create billing discrepancies.\nLuis: I will send payload samples to Nina by Thursday.\nPriya: Ask them to confirm the canonical field mapping.\nLuis: I will update our mapper after their response.\nPriya: Add an automated contract test as well.\nLuis: I will create it before enabling production traffic.\nPriya: Keep the feature flag off until then.",
+    "ground_truth": {
+      "tasks": [
+        "Send payload samples to Nina by Thursday (Assignee: Luis)",
+        "Request confirmation of the canonical field mapping from Nina (Assignee: Luis)",
+        "Update the Kafka mapper after Nina's response (Assignee: Luis)",
+        "Create an automated integration contract test before enabling production traffic (Assignee: Luis)"
+      ],
+      "risks": [
+        "Billing discrepancies caused by incomplete partner orders"
+      ]
+    }
+  },
+  {
+    "id": "meet_integration_004",
+    "transcript": "Priya: The Delta partner integration is returning incomplete orders.\nChen: The MongoDB mapping omits the tax field.\nPriya: Has the partner confirmed their payload format?\nChen: Not yet; their documentation conflicts with the sandbox.\nPriya: Incomplete orders could create billing discrepancies.\nChen: I will send payload samples to Iris by Friday.\nPriya: Ask them to confirm the canonical field mapping.\nChen: I will update our mapper after their response.\nPriya: Add an automated contract test as well.\nChen: I will create it before enabling production traffic.\nPriya: Keep the feature flag off until then.",
+    "ground_truth": {
+      "tasks": [
+        "Send payload samples to Iris by Friday (Assignee: Chen)",
+        "Request confirmation of the canonical field mapping from Iris (Assignee: Chen)",
+        "Update the MongoDB mapper after Iris's response (Assignee: Chen)",
+        "Create an automated integration contract test before enabling production traffic (Assignee: Chen)"
+      ],
+      "risks": [
+        "Billing discrepancies caused by incomplete partner orders"
+      ]
+    }
+  },
+  {
+    "id": "meet_integration_005",
+    "transcript": "Priya: The Ember partner integration is returning incomplete orders.\nFatima: The Elasticsearch mapping omits the tax field.\nPriya: Has the partner confirmed their payload format?\nFatima: Not yet; their documentation conflicts with the sandbox.\nPriya: Incomplete orders could create billing discrepancies.\nFatima: I will send payload samples to Ravi by Monday.\nPriya: Ask them to confirm the canonical field mapping.\nFatima: I will update our mapper after their response.\nPriya: Add an automated contract test as well.\nFatima: I will create it before enabling production traffic.\nPriya: Keep the feature flag off until then.",
+    "ground_truth": {
+      "tasks": [
+        "Send payload samples to Ravi by Monday (Assignee: Fatima)",
+        "Request confirmation of the canonical field mapping from Ravi (Assignee: Fatima)",
+        "Update the Elasticsearch mapper after Ravi's response (Assignee: Fatima)",
+        "Create an automated integration contract test before enabling production traffic (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Billing discrepancies caused by incomplete partner orders"
+      ]
+    }
+  },
+  {
+    "id": "meet_backup_001",
+    "transcript": "Aniket: The Atlas disaster-recovery drill exposed a backup gap.\nAniket: The Postgres restore took longer than the recovery target.\nAniket: What caused the delay?\nAniket: The backup runbook lacks the new encryption step.\nAniket: That could extend downtime during a real incident.\nAniket: I will update the runbook by Tuesday.\nAniket: Repeat the restore drill using the revised steps.\nAniket: I will invite Maya to observe the drill.\nAniket: Record the achieved recovery time.\nAniket: I will add it to the resilience report.\nAniket: We need proof that the target is met.",
+    "ground_truth": {
+      "tasks": [
+        "Update the Postgres backup runbook by Tuesday (Assignee: Aniket)",
+        "Repeat the restore drill using the revised runbook (Assignee: Aniket)",
+        "Invite Maya to observe the restore drill (Assignee: Aniket)",
+        "Add achieved recovery time to the resilience report (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Extended incident downtime because the Postgres runbook lacks the encryption step"
+      ]
+    }
+  },
+  {
+    "id": "meet_backup_002",
+    "transcript": "Aniket: The Beacon disaster-recovery drill exposed a backup gap.\nPriya: The Redis restore took longer than the recovery target.\nAniket: What caused the delay?\nPriya: The backup runbook lacks the new encryption step.\nAniket: That could extend downtime during a real incident.\nPriya: I will update the runbook by Wednesday.\nAniket: Repeat the restore drill using the revised steps.\nPriya: I will invite Omar to observe the drill.\nAniket: Record the achieved recovery time.\nPriya: I will add it to the resilience report.\nAniket: We need proof that the target is met.",
+    "ground_truth": {
+      "tasks": [
+        "Update the Redis backup runbook by Wednesday (Assignee: Priya)",
+        "Repeat the restore drill using the revised runbook (Assignee: Priya)",
+        "Invite Omar to observe the restore drill (Assignee: Priya)",
+        "Add achieved recovery time to the resilience report (Assignee: Priya)"
+      ],
+      "risks": [
+        "Extended incident downtime because the Redis runbook lacks the encryption step"
+      ]
+    }
+  },
+  {
+    "id": "meet_backup_003",
+    "transcript": "Aniket: The Cedar disaster-recovery drill exposed a backup gap.\nLuis: The Kafka restore took longer than the recovery target.\nAniket: What caused the delay?\nLuis: The backup runbook lacks the new encryption step.\nAniket: That could extend downtime during a real incident.\nLuis: I will update the runbook by Thursday.\nAniket: Repeat the restore drill using the revised steps.\nLuis: I will invite Nina to observe the drill.\nAniket: Record the achieved recovery time.\nLuis: I will add it to the resilience report.\nAniket: We need proof that the target is met.",
+    "ground_truth": {
+      "tasks": [
+        "Update the Kafka backup runbook by Thursday (Assignee: Luis)",
+        "Repeat the restore drill using the revised runbook (Assignee: Luis)",
+        "Invite Nina to observe the restore drill (Assignee: Luis)",
+        "Add achieved recovery time to the resilience report (Assignee: Luis)"
+      ],
+      "risks": [
+        "Extended incident downtime because the Kafka runbook lacks the encryption step"
+      ]
+    }
+  },
+  {
+    "id": "meet_backup_004",
+    "transcript": "Aniket: The Delta disaster-recovery drill exposed a backup gap.\nChen: The MongoDB restore took longer than the recovery target.\nAniket: What caused the delay?\nChen: The backup runbook lacks the new encryption step.\nAniket: That could extend downtime during a real incident.\nChen: I will update the runbook by Friday.\nAniket: Repeat the restore drill using the revised steps.\nChen: I will invite Iris to observe the drill.\nAniket: Record the achieved recovery time.\nChen: I will add it to the resilience report.\nAniket: We need proof that the target is met.",
+    "ground_truth": {
+      "tasks": [
+        "Update the MongoDB backup runbook by Friday (Assignee: Chen)",
+        "Repeat the restore drill using the revised runbook (Assignee: Chen)",
+        "Invite Iris to observe the restore drill (Assignee: Chen)",
+        "Add achieved recovery time to the resilience report (Assignee: Chen)"
+      ],
+      "risks": [
+        "Extended incident downtime because the MongoDB runbook lacks the encryption step"
+      ]
+    }
+  },
+  {
+    "id": "meet_backup_005",
+    "transcript": "Aniket: The Ember disaster-recovery drill exposed a backup gap.\nFatima: The Elasticsearch restore took longer than the recovery target.\nAniket: What caused the delay?\nFatima: The backup runbook lacks the new encryption step.\nAniket: That could extend downtime during a real incident.\nFatima: I will update the runbook by Monday.\nAniket: Repeat the restore drill using the revised steps.\nFatima: I will invite Ravi to observe the drill.\nAniket: Record the achieved recovery time.\nFatima: I will add it to the resilience report.\nAniket: We need proof that the target is met.",
+    "ground_truth": {
+      "tasks": [
+        "Update the Elasticsearch backup runbook by Monday (Assignee: Fatima)",
+        "Repeat the restore drill using the revised runbook (Assignee: Fatima)",
+        "Invite Ravi to observe the restore drill (Assignee: Fatima)",
+        "Add achieved recovery time to the resilience report (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Extended incident downtime because the Elasticsearch runbook lacks the encryption step"
+      ]
+    }
+  },
+  {
+    "id": "meet_budget_001",
+    "transcript": "Sarah: The Atlas cloud spend is above the approved forecast.\nAniket: Unused Postgres capacity is running overnight.\nSarah: Do we know the monthly impact?\nAniket: Finance estimates it at twelve percent of the service budget.\nSarah: Continued overspend could force cuts to planned work.\nAniket: I will identify idle capacity by Tuesday.\nSarah: Submit a rightsizing plan to Maya.\nAniket: I will include projected savings in that plan.\nSarah: Finance needs the plan before the next forecast cycle.\nAniket: I will track the approved changes.\nSarah: Please report the first month of savings.",
+    "ground_truth": {
+      "tasks": [
+        "Identify idle Postgres capacity by Tuesday (Assignee: Aniket)",
+        "Submit a rightsizing plan with projected savings to Maya (Assignee: Aniket)",
+        "Track approved rightsizing changes (Assignee: Aniket)",
+        "Report first-month savings (Assignee: Aniket)"
+      ],
+      "risks": [
+        "Planned-work cuts caused by continued cloud overspend"
+      ]
+    }
+  },
+  {
+    "id": "meet_budget_002",
+    "transcript": "Sarah: The Beacon cloud spend is above the approved forecast.\nPriya: Unused Redis capacity is running overnight.\nSarah: Do we know the monthly impact?\nPriya: Finance estimates it at twelve percent of the service budget.\nSarah: Continued overspend could force cuts to planned work.\nPriya: I will identify idle capacity by Wednesday.\nSarah: Submit a rightsizing plan to Omar.\nPriya: I will include projected savings in that plan.\nSarah: Finance needs the plan before the next forecast cycle.\nPriya: I will track the approved changes.\nSarah: Please report the first month of savings.",
+    "ground_truth": {
+      "tasks": [
+        "Identify idle Redis capacity by Wednesday (Assignee: Priya)",
+        "Submit a rightsizing plan with projected savings to Omar (Assignee: Priya)",
+        "Track approved rightsizing changes (Assignee: Priya)",
+        "Report first-month savings (Assignee: Priya)"
+      ],
+      "risks": [
+        "Planned-work cuts caused by continued cloud overspend"
+      ]
+    }
+  },
+  {
+    "id": "meet_budget_003",
+    "transcript": "Sarah: The Cedar cloud spend is above the approved forecast.\nLuis: Unused Kafka capacity is running overnight.\nSarah: Do we know the monthly impact?\nLuis: Finance estimates it at twelve percent of the service budget.\nSarah: Continued overspend could force cuts to planned work.\nLuis: I will identify idle capacity by Thursday.\nSarah: Submit a rightsizing plan to Nina.\nLuis: I will include projected savings in that plan.\nSarah: Finance needs the plan before the next forecast cycle.\nLuis: I will track the approved changes.\nSarah: Please report the first month of savings.",
+    "ground_truth": {
+      "tasks": [
+        "Identify idle Kafka capacity by Thursday (Assignee: Luis)",
+        "Submit a rightsizing plan with projected savings to Nina (Assignee: Luis)",
+        "Track approved rightsizing changes (Assignee: Luis)",
+        "Report first-month savings (Assignee: Luis)"
+      ],
+      "risks": [
+        "Planned-work cuts caused by continued cloud overspend"
+      ]
+    }
+  },
+  {
+    "id": "meet_budget_004",
+    "transcript": "Sarah: The Delta cloud spend is above the approved forecast.\nChen: Unused MongoDB capacity is running overnight.\nSarah: Do we know the monthly impact?\nChen: Finance estimates it at twelve percent of the service budget.\nSarah: Continued overspend could force cuts to planned work.\nChen: I will identify idle capacity by Friday.\nSarah: Submit a rightsizing plan to Iris.\nChen: I will include projected savings in that plan.\nSarah: Finance needs the plan before the next forecast cycle.\nChen: I will track the approved changes.\nSarah: Please report the first month of savings.",
+    "ground_truth": {
+      "tasks": [
+        "Identify idle MongoDB capacity by Friday (Assignee: Chen)",
+        "Submit a rightsizing plan with projected savings to Iris (Assignee: Chen)",
+        "Track approved rightsizing changes (Assignee: Chen)",
+        "Report first-month savings (Assignee: Chen)"
+      ],
+      "risks": [
+        "Planned-work cuts caused by continued cloud overspend"
+      ]
+    }
+  },
+  {
+    "id": "meet_budget_005",
+    "transcript": "Sarah: The Ember cloud spend is above the approved forecast.\nFatima: Unused Elasticsearch capacity is running overnight.\nSarah: Do we know the monthly impact?\nFatima: Finance estimates it at twelve percent of the service budget.\nSarah: Continued overspend could force cuts to planned work.\nFatima: I will identify idle capacity by Monday.\nSarah: Submit a rightsizing plan to Ravi.\nFatima: I will include projected savings in that plan.\nSarah: Finance needs the plan before the next forecast cycle.\nFatima: I will track the approved changes.\nSarah: Please report the first month of savings.",
+    "ground_truth": {
+      "tasks": [
+        "Identify idle Elasticsearch capacity by Monday (Assignee: Fatima)",
+        "Submit a rightsizing plan with projected savings to Ravi (Assignee: Fatima)",
+        "Track approved rightsizing changes (Assignee: Fatima)",
+        "Report first-month savings (Assignee: Fatima)"
+      ],
+      "risks": [
+        "Planned-work cuts caused by continued cloud overspend"
+      ]
+    }
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "generated_at_utc": "2026-07-13T10:18:00.795322+00:00",
+  "records": 1,
+  "groups": [
+    {
+      "model_key": "groq_qwen",
+      "model": "qwen/qwen3-32b",
+      "provider": "groq",
+      "strategy": "zero_shot",
+      "evaluation": {
+        "records_in_dataset": 1,
+        "records_predicted": 1,
+        "item_metrics": {
+          "tasks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 2
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "risks": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 1
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          },
+          "combined": {
+            "counts": {
+              "true_positive": 0,
+              "false_positive": 0,
+              "false_negative": 3
+            },
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+          }
+        },
+        "hallucination": {
+          "false_positives": 0,
+          "false_positive_rate": 0.0,
+          "judge_records": 0,
+          "judge_fabricated_items": null,
+          "judge_hallucination_rate": null
+        },
+        "operational_metrics": {
+          "json_parse_errors": 1,
+          "json_parse_error_rate": 1.0,
+          "average_latency_ms": null
+        }
+      },
+      "context_stress_evaluation": null,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost_usd": 0.0,
+      "xml_or_json_parse_latency_ms": null,
+      "context_stress_cases": 0
+    }
+  ],
+  "pricing": {
+    "groq_qwen": {
+      "input_per_million_usd": 0.29,
+      "output_per_million_usd": 0.59
+    }
+  }
+}
